@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Results";
+}
+
+<div class="d-flex justify-content-center">
+    <div class="card p-4">
+        <div class="card-body">
+            <div class="d-inline-flex">
+                <h2> Результат: &nbsp</h2> <h2>@Model</h2>
+            </div>
+            <br /><br />
+            <div class="alert alert-success">
+                <div class="d-inline-flex">
+                    Правильных ответов: &nbsp <p class="font-weight-normal">@Model</p>
+                </div>
+            </div>
+            <div class="alert alert-danger">
+                <div class="d-inline-flex">
+                    Неправильных ответов: &nbsp <p class="font-weight-normal">@ViewBag.wr</p>
+                </div>
+            </div>
+        </div>
+        <a class="btn btn-secondary" asp-controller="Home" asp-action="Index">Вернуться на главную</a>
+    </div>
+</div>
+
